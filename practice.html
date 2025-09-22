@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 Column Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+    height: 300px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .card p {
+      margin: 15px 0;
+    }
+    .card button {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="krishna.jpg" alt="Image 1">
+      <p>Lord Krishna is a revered deity in Hinduism, known as the eighth avatar of Vishnu and an 
+        important figure in the Mahabharata and the Bhagavad Gita. His name means "all-attractive" 
+        and he is depicted as having blue-black skin. Krishna's life story features divine feats like lifting 
+        Govardhan Hill, his role as a guide and friend, and his teachings on dharma and devotion.</p>
+      <button onclick="changeColor()">Change BG Colour</button>
+    </div>
+    <div class="card">
+      <img src="hanuman.jpeg" alt="Image 2">
+      <p>Hanuman is a major deity in Hinduism, featured prominently in the Ramayana, known for 
+        his immense strength, unwavering devotion to Lord Rama, and loyalty. He is often 
+        depicted as a monkey-like being and is considered the son of the wind god, Vayu, 
+        and the celestial maiden Anjana. Hanuman possesses supernatural powers, including
+         the ability to fly and assume any form, and is worshipped as a symbol of courage 
+         and selfless service.</p>
+      <button onclick="changeColor()">Change BG Colour</button>
+    </div>
+    <div class="card">
+      <img src="cute.jpeg" alt="Image 3">
+      <p>The cat (Felis catus), also referred to as the domestic cat or house cat, 
+        is a small domesticated carnivorous mammal. It is the only domesticated
+         species of the family Felidae. Advances in archaeology and genetics have 
+         shown that the domestication of the cat occurred in the Near East around 7500 BC.
+          It is commonly kept as a pet and working cat, but it also ranges freely as a 
+          feral cat, avoiding human contact. It is valued by humans for companionship 
+          and its ability to kill vermin.</p>
+      <button onclick="changeColor()">Change BG Colour</button>
+    </div>
+    <div class="card">
+      <img src="bird.jpeg" alt="Image 4">
+      <p>Birds are a group of warm-blooded vertebrates constituting the class Aves, 
+        characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, 
+        a four-chambered heart, and a strong yet lightweight skeleton. Birds live worldwide and range in size 
+        from the 5.5 cm (2.2 in) bee hummingbird to the 2.8 m (9 ft 2 in) common ostrich. There are over 11,000 
+        living species and they are split into 44 orders. More than half are passerine or "perching" birds. 
+        </p>
+      <button onclick="changeColor()">Change BG Colour</button>
+    </div>
+  </div>
+
+  <script>
+    function changeColor() {
+      // Pick a random color
+      const colors = ["#f5f5f5", "#ffebcd", "#d1f7d6", "#e0c3fc", "#c3e0fc", "#fff3cd"];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+
+</body>
+</html>
