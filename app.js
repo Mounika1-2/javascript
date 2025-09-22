@@ -16,20 +16,22 @@
 // print command is used to print document
 a= 7367;
 console.log(typeof(a));
-name="Krishna";
-console.log(typeof(name));
-c=true;
-console.log(typeof(c));
-data=null;
-console.log(typeof(data));
-d=undefined;
-console.log(typeof(d));
+ name="Krishna";
+ console.log(typeof(name));
+ c=true;
+ console.log(typeof(c));
+ data=null;
+ console.log(typeof(data));
+ d=undefined;
+ console.log(typeof(d));
 
-// non primitive
+// // non primitive
 array=[56,"Krishna",true,null];
-console.log(type(arrray));
-obj={
+console.log(typeof(arrray));
+
+f = {
     name: "Krishna",
     age: "23",
-    dept: "CSE"};
-console.log(typeof(obj));
+    dept: "CSE"
+};
+console.log(typeof(f));
